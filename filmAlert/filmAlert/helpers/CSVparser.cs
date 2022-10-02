@@ -1,7 +1,5 @@
 ﻿using filmAlert.interfaces;
 using filmAlert.objects;
-using System.Collections;
-using System.IO;
 
 namespace filmAlert
 {
