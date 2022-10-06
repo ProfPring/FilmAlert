@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VY0pkH0XftjiPdqla/zJgd08leC7cjDi5WxMmeKCPdt0731fbNmHDqnwrLuWH5QvJQ26IAC2QAguz+paBiTLiQ==",
+  "dgSpecHash": "BwtAGIolKi3XYOn96NCF4BUOi4Ak9kivJ5Get0Pv7Cd/3w5/MmEQtTDWIOA1aM/K1YeJd/dRcO13G5I1hGJ+zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sam\\Source\\Repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj",
+  "projectFilePath": "C:\\Users\\Sam\\source\\repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sam\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-preview.7.22375.6\\microsoft.extensions.dependencyinjection.7.0.0-preview.7.22375.6.nupkg.sha512",
     "C:\\Users\\Sam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-preview.7.22375.6\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512"

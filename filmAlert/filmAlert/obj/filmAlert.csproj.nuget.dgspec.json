@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sam\\Source\\Repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj": {}
+    "C:\\Users\\Sam\\source\\repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sam\\Source\\Repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj": {
+    "C:\\Users\\Sam\\source\\repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sam\\Source\\Repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj",
+        "projectUniqueName": "C:\\Users\\Sam\\source\\repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj",
         "projectName": "filmAlert",
-        "projectPath": "C:\\Users\\Sam\\Source\\Repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj",
+        "projectPath": "C:\\Users\\Sam\\source\\repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj",
         "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sam\\Source\\Repos\\FilmAlert\\filmAlert\\filmAlert\\obj\\",
+        "outputPath": "C:\\Users\\Sam\\source\\repos\\FilmAlert\\filmAlert\\filmAlert\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
