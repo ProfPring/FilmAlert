@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BwtAGIolKi3XYOn96NCF4BUOi4Ak9kivJ5Get0Pv7Cd/3w5/MmEQtTDWIOA1aM/K1YeJd/dRcO13G5I1hGJ+zg==",
+  "dgSpecHash": "wocYOCJ+m/reu7UMzLcWTM3ehXdpmpH/5vNjSJJ8nyZQXxMW64eUnjFJEop+n4W3+qGkUPply1TxdV6oc2I/tw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sam\\source\\repos\\FilmAlert\\filmAlert\\filmAlert\\filmAlert.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-preview.7.22375.6\\microsoft.extensions.dependencyinjection.7.0.0-preview.7.22375.6.nupkg.sha512",
-    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-preview.7.22375.6\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512"
+    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
