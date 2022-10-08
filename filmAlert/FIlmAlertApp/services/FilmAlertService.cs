@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using filmAlert.helpers;
 using filmAlert.interfaces;
 using filmAlert.objects;
-using Microsoft.Extensions.Logging;
 
 namespace FIlmAlertApp.services
 {
@@ -20,7 +18,7 @@ namespace FIlmAlertApp.services
 
         }
 
-        public async Task<Boolean> CheckFilmsOutToday(Dictionary<int, show>  showDict, ILogger log)
+        public async Task<Boolean> CheckFilmsOutToday(Dictionary<int, show>  showDict)
         {
             try
             {
@@ -31,7 +29,7 @@ namespace FIlmAlertApp.services
             }
             catch (Exception ex) 
             {
-                log.LogError($"an exception has been thrown {ex}");
+                Console.WriteLine(ex.ToString()); 
                 return false;
             }
         }

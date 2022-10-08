@@ -3,7 +3,6 @@ using filmAlert.interfaces;
 using filmAlert;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using filmAlert.objects;
 using System.Collections.Generic;
 using FIlmAlertApp.interfaces;
@@ -32,11 +31,11 @@ namespace FIlmAlertApp
         }
 
 
-        [FunctionName("Function1")]
-        public void Run([TimerTrigger("0 0 0 * * *")]TimerInfo myTimer, ILogger log)
+        [FunctionName("FilmALert")]
+        public void Run([TimerTrigger("0 0 0 * * *")] TimerInfo myTimer)
         {
-            log.LogInformation($"FilmAlert has run at: {DateTime.Now}");
-            AlertService.CheckFilmsOutToday(showDict, log);
+            Console.WriteLine("funciton has run");
+            AlertService.CheckFilmsOutToday(showDict);
         }
     }
 
