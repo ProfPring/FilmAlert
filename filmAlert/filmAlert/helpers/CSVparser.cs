@@ -1,17 +1,16 @@
 ﻿using filmAlert.interfaces;
 using filmAlert.objects;
+using System.Runtime.CompilerServices;
 
 namespace filmAlert
 {
     public class CSVparser : ICSVparser
     {
-        string binaryPath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+        string binaryPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
 
-        public Dictionary<int, show> parseCSV()
+        public Dictionary<int, show> parseCSV(string csvFileLocation)
         {
-            var CSVFileLocation = binaryPath.Replace(@"Debug\net6.0", @"films.csv");
-
-            using (var reader = new StreamReader(CSVFileLocation))
+            using (var reader = new StreamReader(csvFileLocation))
             {
                 var csv = reader.ReadToEnd();
 

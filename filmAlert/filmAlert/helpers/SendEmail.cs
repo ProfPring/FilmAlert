@@ -1,5 +1,7 @@
 ﻿using filmAlert.interfaces;
 using filmAlert.objects;
+using FluentEmail.Core;
+using FluentEmail.Smtp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,39 +15,36 @@ namespace filmAlert.helpers
     public class SendEmail: ISendEmail
     {
 
-        public bool send(List<show> showList) 
+        public async Task<bool> send(List<show> showList) 
         {
             string filmsString = string.Join(",", showList);
             try
             {
-                var body = "<p>New shows!</p>";
-                var message = new MailMessage();
-                message.To.Add(new MailAddress("samrobbo1997@live.co.uk"));  // where the message is going 
-                message.From = new MailAddress("sam@samsite.tech", "FilmAlert");  // being sent from
-                message.Subject = "from FilmAlert";
-                message.Body = string.Format(body, "FilmAlert", "sam@samsite.tech", filmsString);
-                message.IsBodyHtml = true;
-
-                using (var smtp = new SmtpClient())
+                var sender = new SmtpSender(() => new SmtpClient("localhost")
                 {
-                    var credential = new NetworkCredential
-                    {
-                        UserName = "sam@samsite.tech",
-                        Password = "Film@Alertpass5728"
-                    };
+                    EnableSsl = false,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    Port = 25
+                    //DeliveryMethod = SmtpDeliveryMethod.SpecifiedPickupDirectory,
+                    //PickupDirectoryLocation = @"C:\Demos"
+                });
 
-                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    smtp.EnableSsl = false;
-                    smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = credential;
-                    smtp.Host = "stmphost";
-                    smtp.Timeout = 10000;
-                    smtp.Port = 80;
-                    smtp.Send(message);
+                StringBuilder template = new();
+                template.AppendLine("<p>Film out!</p>");
+                template.AppendLine("- The Film Alert Team");
 
-                    return true;
+                Email.DefaultSender = sender;
+                
 
-                }
+                var email = await Email
+                    .From("sam@samsite.tech")
+                    .To("samrobbo1997@live.co.uk", "Sam")
+                    .Subject("Thanks!")
+                    .UsingTemplate(template.ToString(), new { FirstName = "Sam", ProductName = "FilmAlert" })
+                    .Body(filmsString)
+                    .SendAsync();
+
+                return true;
             }
             catch (Exception e)
             {

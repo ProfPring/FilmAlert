@@ -34,3 +34,5 @@ C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\net6.0\refint\
 C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\net6.0\filmAlert.pdb
 C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\net6.0\filmAlert.genruntimeconfig.cache
 C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\net6.0\ref\filmAlert.dll
+C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\bin\Debug\net6.0\FluentEmail.Core.dll
+C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\bin\Debug\net6.0\FluentEmail.Smtp.dll

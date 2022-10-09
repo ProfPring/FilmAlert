@@ -5,6 +5,6 @@ namespace filmAlert.interfaces
 {
     public interface ICSVparser
     {
-        public Dictionary<int, show> parseCSV();
+        public Dictionary<int, show> parseCSV(string csvFileLocation);
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\netcoreapp3.1\filmAlert.csproj.AssemblyReference.cache
+C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\netcoreapp3.1\filmAlert.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\netcoreapp3.1\filmAlert.AssemblyInfoInputs.cache
+C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\netcoreapp3.1\filmAlert.AssemblyInfo.cs
+C:\Users\Sam\source\repos\FilmAlert\filmAlert\filmAlert\obj\Debug\netcoreapp3.1\filmAlert.csproj.CoreCompileInputs.cache

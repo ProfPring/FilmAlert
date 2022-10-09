@@ -9,6 +9,6 @@ namespace filmAlert.interfaces
 {
     public interface ISendEmail
     {
-        public bool send(List<show> shows);
+        public Task<bool> send(List<show> showList);
     }
 }
